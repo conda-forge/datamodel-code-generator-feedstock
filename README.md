@@ -1,11 +1,11 @@
-About datamodel-code-generator
-==============================
+About datamodel-code-generator-feedstock
+========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datamodel-code-generator-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/koxudaxi/datamodel-code-generator
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datamodel-code-generator-feedstock/blob/main/LICENSE.txt)
 
 Summary: Pydantic model and dataclasses.dataclass generator for easy conversion of JSON, OpenAPI, JSON Schema, and YAML data sources.
 
