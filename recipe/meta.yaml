@@ -12,8 +12,6 @@ source:
 build:
   noarch: python
   script:
-    # Having trouble parsing pytproject.toml, default to setup.py
-    - {{ PYTHON }} -c "__import__('os').unlink('pyproject.toml')"
     - {{ PYTHON }} -m pip install . -vv
   number: 0
   entry_points:
@@ -22,11 +20,11 @@ build:
 requirements:
   host:
     - pip
-    # - poetry-core >=1.0.0
-    # - poetry-dynamic-versioning
+    - poetry-core >=1.0.0
+    - poetry-dynamic-versioning
     - python >=3.7,<4.0
   run:
-    - argcomplete >=1.10,<3.0
+    - argcomplete >=1.10,<4.0
     - black >=19.10b0
     - genson >=1.2.1,<2.0
     - inflect >=4.1.0,<6.0
