@@ -1,5 +1,5 @@
 {% set name = "datamodel-code-generator" %}
-{% set version = "0.17.2" %}
+{% set version = "0.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/datamodel_code_generator-{{ version }}.tar.gz
-  sha256: e88e000b254b07937a45902e95c08c9edec21eee3492c3a3ad4b6a4115345924
+  sha256: 5acf69bcf3c440e90a7d0c7b99ca100c8f6ce0348aa4b3da8ee4f9b0242d164c
 
 build:
   noarch: python
@@ -37,7 +37,6 @@ requirements:
     - python >=3.7,<4.0
     - pysnooper >=0.4.1,<2.0.0
     - toml >=0.10.0,<1.0.0
-    - typed-ast
 
 test:
   imports:
