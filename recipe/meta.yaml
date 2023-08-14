@@ -13,7 +13,7 @@ build:
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - datamodel-codegen=datamodel_code_generator.__main__:main
 
