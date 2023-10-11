@@ -1,5 +1,5 @@
 {% set name = "datamodel-code-generator" %}
-{% set version = "0.21.5" %}
+{% set version = "0.22.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/datamodel_code_generator-{{ version }}.tar.gz
-  sha256: be971a96de2b4e3639fab6b979f1fd538872a5a86bc7b78d710eb3591e4bc3ac
+  sha256: 73ebcefa498e39d0f210923856cb4a498bacc3b7bdea140cca7324e25f5c581b
 
 build:
   noarch: python
@@ -30,9 +30,9 @@ requirements:
     - inflect >=4.1.0,<6.0
     - isort >=4.3.21,<6.0
     - jinja2 >=2.10.1,<4.0
-    - openapi-spec-validator >=0.2.8,<=0.5.1
+    - openapi-spec-validator >=0.2.8,<=0.5.7
     - packaging
-    - prance >=0.18.2,<1.0
+    - prance >=0.18.2
     - pydantic >=1.5.1,<3.0
     - python >=3.7,<4.0
     - pysnooper >=0.4.1,<2.0.0
