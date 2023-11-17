@@ -1,5 +1,5 @@
 {% set name = "datamodel-code-generator" %}
-{% set version = "0.23.0" %}
+{% set version = "0.24.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/datamodel_code_generator-{{ version }}.tar.gz
-  sha256: a6ba58b6c2539e676cf6a72114fb9d0e0020e7a0ae3883eb3d34e8cafb504c01
+  sha256: d278c751038c8911efc82856ec549ac1e3e13134567387a4bb5ab7ddc6543162
 
 build:
   noarch: python
