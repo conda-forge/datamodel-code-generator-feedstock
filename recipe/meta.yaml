@@ -1,13 +1,13 @@
 {% set name = "datamodel-code-generator" %}
-{% set version = "0.26.2" %}
+{% set version = "0.26.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/datamodel_code_generator-{{ version }}.tar.gz
-  sha256: 03c153434d5a308e31fb4528c0199015054570642ccda8cd2f2cb3cc2c497622
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/datamodel_code_generator-{{ version }}.tar.gz
+  sha256: b58e0800eb6448e1d1df02f4586207c1e3631c4a188531d154b00b3cf2f95fd8
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - pip
     - poetry-core >=1.0.0
     - poetry-dynamic-versioning
-    - python >=3.7,<4.0
+    - python {{ python_min }}
   run:
     - argcomplete >=1.10,<4.0
     - black >=19.10b0
@@ -34,7 +34,7 @@ requirements:
     - packaging
     - prance >=0.18.2
     - pydantic >=1.5.1,<3.0
-    - python >=3.7,<4.0
+    - python >={{ python_min }}
     - pysnooper >=0.4.1,<2.0.0
     - toml >=0.10.0,<1.0.0
 
@@ -47,6 +47,7 @@ test:
     - datamodel-codegen --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/koxudaxi/datamodel-code-generator
