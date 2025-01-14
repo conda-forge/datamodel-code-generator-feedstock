@@ -1,5 +1,5 @@
 {% set name = "datamodel-code-generator" %}
-{% set version = "0.26.4" %}
+{% set version = "0.26.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/datamodel_code_generator-{{ version }}.tar.gz
-  sha256: 9881124fec15655a3a635808ea5ded63afb0540c0c402998070ccf60a9dab225
+  sha256: c4a94a7dbf7972129882732d9bcee44c9ae090f57c82edd58d237b9d48c40dd0
 
 build:
   noarch: python
@@ -42,8 +42,7 @@ test:
   imports:
     - datamodel_code_generator
   commands:
-    # Cannot run pip check because prance version is broken
-    # - pip check
+    - pip check
     - datamodel-codegen --help
   requires:
     - pip
