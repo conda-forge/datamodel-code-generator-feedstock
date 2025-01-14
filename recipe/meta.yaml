@@ -42,8 +42,7 @@ test:
   imports:
     - datamodel_code_generator
   commands:
-    # Cannot run pip check because prance version is broken
-    # - pip check
+    - pip check
     - datamodel-codegen --help
   requires:
     - pip
