@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: datamodel-code-generator
-  version: "0.54.1"
+  version: "0.55.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/datamodel_code_generator-${{ version }}.tar.gz
-  sha256: dd9eb7594f94a8b85d7e410f4d997a443cf7a52a1dcc049fae6cf35660f18803
+  sha256: 20ae7a4fbbb12be380f0bd02544db4abae96c5b644d4b3f2b9c3fc0bc9ee1184
 
 build:
   number: 0
@@ -36,7 +36,7 @@ requirements:
     - isort >=4.3.21,<9
     - jinja2 >=2.10.1,<4
     - packaging
-    - pydantic >=1.5
+    - pydantic >=2,<3
     - pyyaml >=6.0.1
     - tomli >=2.2.1,<3
 
