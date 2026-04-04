@@ -35,7 +35,6 @@ requirements:
     - inflect >=4.1,<8
     - isort >=4.3.21,<9
     - jinja2 >=2.10.1,<4
-    - packaging
     - pydantic >=2,<3
     - pyyaml >=6.0.1
     - tomli >=2.2.1,<3
@@ -45,7 +44,9 @@ tests:
       imports:
         - datamodel_code_generator
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*
