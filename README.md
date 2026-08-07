@@ -42,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `datamodel-code-generator` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install datamodel-code-generator
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install datamodel-code-generator
 ```
 
-It is possible to list all of the versions of `datamodel-code-generator` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add datamodel-code-generator
+# for installing globally
+pixi global install datamodel-code-generator
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `datamodel-code-generator` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search datamodel-code-generator --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search datamodel-code-generator --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search datamodel-code-generator --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -78,6 +120,8 @@ mamba repoquery whoneeds datamodel-code-generator --channel conda-forge
 # List dependencies of `datamodel-code-generator`:
 mamba repoquery depends datamodel-code-generator --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
