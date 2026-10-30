@@ -30,7 +30,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - argcomplete >=2.10.1,<4
-    - black >=26.5
+    - black >=19.10b0
     - genson >=1.2.1,<2
     - inflect >=4.1,<8
     - isort >=4.3.21,<9
