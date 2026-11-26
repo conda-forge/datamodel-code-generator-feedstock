@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: datamodel-code-generator
-  version: "0.100.0"
+  version: "0.103.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/datamodel_code_generator-${{ version }}.tar.gz
-  sha256: 3ce827baa887fc362711c7b9876cd5b2e3754a38e54f639f85495963ffaa3351
+  sha256: d1610b2601b7b82283cfe6a80704966c1d53e61817c956c7a5b6466f30cb8871
 
 build:
   number: 0
